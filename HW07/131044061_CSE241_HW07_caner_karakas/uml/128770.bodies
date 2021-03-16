@@ -1,0 +1,81 @@
+class Triangle
+!!!144898.java!!!	Triangle(inout l : Triangle)
+		this.set_line(l.get_line());
+		this.set_coords(l.get_point_x(0), l.get_point_y(0), l.get_point_x(1), l.get_point_y(1), l.get_point_x(2), l.get_point_y(2));
+!!!145026.java!!!	Triangle(in l : double)
+		this.set_line(l);
+!!!145154.java!!!	compareTo(inout other : Shape) : int
+		if(this.area() == other.area())
+			return 1;
+		return 0;
+!!!145282.java!!!	area() : double
+return height * line / 2;
+!!!145410.java!!!	perimeter() : double
+return line * 3;
+!!!145538.java!!!	increment() : Shape
+		for(int i = 0; i<6; i++){
+			for(int j=0; j<6; j++)
+				points[i][j]++;
+		}
+		return this;
+!!!145666.java!!!	decrement() : Shape
+		for(int i = 0; i<6; i++){
+			for(int j=0; j<6; j++)
+				points[i][j]--;
+		}
+		return this;
+!!!145794.java!!!	draw(inout graph : Graphics) : void
+		this.paintComponent(graph);
+!!!145922.java!!!	paintComponent(inout graph : Graphics) : void
+		super.paintComponent(graph);
+		int [] xPoints = new int [3];
+		int [] yPoints = new int [3];
+		for(int i = 0; i<3; i++) {
+			xPoints[i] = points[i][0];
+		}
+		for(int i = 0; i<3; i++) {
+			yPoints[i] = points[i][1];
+		}
+		graph.setColor(Color.RED);
+		graph.drawPolygon(xPoints, yPoints, 3);
+!!!146050.java!!!	set_line(in l : double) : void
+		if(l>0){
+			line = l;
+			height = (line/2) * Math.sqrt(3);
+		}
+		else{/*
+			System.out.printf("Error111!!");
+			System.exit(0);*/
+			new Exception();
+		}
+!!!146178.java!!!	get_line() : double
+return line;
+!!!146306.java!!!	get_height() : double
+return height;
+!!!146434.java!!!	set_coords(in p1_x : double, in p1_y : double, in p2_x : double, in p2_y : double, in p3_x : double, in p3_y : double) : void
+		double line1 = Math.sqrt(((p1_x-p2_x)*(p1_x-p2_x)) + ((p1_y-p2_y)*(p1_y-p2_y)));
+		double line2 = Math.sqrt(((p1_x-p3_x)*(p1_x-p3_x)) + ((p1_y-p3_y)*(p1_y-p3_y)));
+		double line3 = Math.sqrt(((p3_x-p2_x)*(p3_x-p2_x)) + ((p3_y-p2_y)*(p3_y-p2_y)));
+		if(line1<=line || line2<=line || line3<=line){
+			points[0][0] = (int) p1_x;
+			points[0][1] = (int) p1_y;
+			points[1][0] = (int) p2_x;
+			points[1][1] = (int) p2_y;
+			points[2][0] = (int) p3_x;
+			points[2][1] = (int) p3_y;
+		}
+		else{/*
+			System.out.printf("Error!!");
+			System.exit(0);*/
+			new Exception();
+		}
+!!!146562.java!!!	get_point_x(in index : int) : double
+return points[index][0];
+!!!146690.java!!!	get_point_y(in index : int) : double
+return points[index][1];
+!!!146818.java!!!	result_area(inout tri : Triangle) : double
+return numOfShape * tri.area();
+!!!146946.java!!!	get_numOfShape() : int
+numOfShape++;return numOfShape;
+!!!147074.java!!!	reset_numOfShape() : int
+numOfShape = 0;return numOfShape;

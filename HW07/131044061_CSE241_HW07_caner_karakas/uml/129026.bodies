@@ -1,0 +1,18 @@
+class Point2D
+!!!137090.java!!!	Point2D(in x : double, in y : double)
+			set_x(x);
+			set_y(y);
+!!!137218.java!!!	get_y() : double
+			return y;
+!!!137346.java!!!	set_y(in y : double) : void
+			if(y>=0)
+				this.y = y;
+			else
+				new Exception();
+!!!137474.java!!!	get_x() : double
+			return x;
+!!!137602.java!!!	set_x(in x1 : double) : void
+			if(x>=0)
+				this.x = x1;
+			else
+				new Exception();

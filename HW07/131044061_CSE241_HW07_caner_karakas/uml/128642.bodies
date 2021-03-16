@@ -1,0 +1,86 @@
+class Rectangle
+!!!141186.java!!!	Rectangle(inout rect : Rectangle)
+		this.set_width(rect.get_width());
+		this.set_height(rect.get_height());
+		this.set_coords(rect.get_pos_x(), rect.get_pos_y());
+!!!141314.java!!!	Rectangle(in w : double, in h : double)
+		this.set_width(w);
+		this.set_height(h);
+!!!141442.java!!!	compareTo(inout other : Shape) : int
+		if(this.area() == other.area())
+			return 1;
+		return 0;
+!!!141570.java!!!	area() : double
+return width * height;
+!!!141698.java!!!	perimeter() : double
+return 2 * width * height;
+!!!141826.java!!!	increment() : Shape
+		this.pos_x++;
+		this.pos_y++;
+		return this;
+!!!141954.java!!!	decrement() : Shape
+		this.pos_x--;
+		this.pos_y--;
+		return this;
+!!!142082.java!!!	draw(inout graph : Graphics) : void
+		this.paintComponent(graph);
+!!!142210.java!!!	paintComponent(inout graph : Graphics) : void
+		super.paintComponent(graph);
+		graph.setColor(Color.GREEN);
+		graph.drawRect((int)this.get_pos_x(), (int)this.get_pos_y(), (int)this.get_width(), (int)this.get_height());
+!!!142338.java!!!	set_width(in w : double) : void
+		if(w>0){
+			width = w;
+		}
+		else{
+			new Exception ();
+			/*System.out.printf("Error!!");
+			System.exit(0);*/
+		}
+!!!142466.java!!!	set_height(in h : double) : void
+		if(h>0){
+			height = h;
+		}
+		else{
+			new Exception ();
+			/*System.out.printf("Error!!");
+			System.exit(0);*/
+		}
+!!!142594.java!!!	get_width() : double
+return width;
+!!!142722.java!!!	get_height() : double
+return height;
+!!!142850.java!!!	set_pos_x(in x : double) : void
+		if(x>=0){
+			pos_x = x;
+		}
+		else{/*
+			System.out.printf("Error!!");
+			System.exit(0);*/
+			new Exception ();
+		}
+!!!142978.java!!!	set_pos_y(in y : double) : void
+		if(y>=0){
+			pos_y = y;
+		}
+		else{
+			new Exception ();
+			/*System.out.printf("Error!!");
+			System.exit(0);*/
+		}
+!!!143106.java!!!	get_pos_x() : double
+return pos_x;
+!!!143234.java!!!	get_pos_y() : double
+return pos_y;
+!!!143362.java!!!	get_numOFShape() : int
+numOfShape++;return numOfShape;
+!!!143490.java!!!	reset_numOfShape() : int
+numOfShape = 0;return numOfShape;
+!!!143618.java!!!	result_area(inout rect : Rectangle) : double
+return numOfShape * rect.area();
+!!!143746.java!!!	set_coords(in x : double, in y : double) : void
+		set_pos_x(x);
+		set_pos_y(y);
+!!!143874.java!!!	set_lines(in w : double, in h : double) : void
+		this.set_width(w);
+		this.set_height(h);

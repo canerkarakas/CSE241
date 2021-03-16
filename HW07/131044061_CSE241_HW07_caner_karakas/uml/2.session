@@ -1,0 +1,13 @@
+window_sizes 1920 1017 450 1465 867 104
+
+diagrams
+  active  classdiagram_ref 128002 // uml
+    1288 995 68 A4 0 0
+end
+show_stereotypes
+selected class_ref 129410 // test
+open
+  classview_ref 128002 // src
+  deploymentview_ref 128002 // src
+end
+end
