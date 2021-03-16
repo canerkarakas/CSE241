@@ -1,0 +1,25 @@
+<svg>
+
+<rect width='11' height='5' fill='yellow'/>
+<polygon points='0 0 1 1.73205 2 0'  stroke='black' fill='purple'/>
+<polygon points='1 1.73205 2 0 3 1.73205'  stroke='black' fill='purple'/>
+<polygon points='2 0 3 1.73205 4 0'  stroke='black' fill='purple'/>
+<polygon points='3 1.73205 4 0 5 1.73205'  stroke='black' fill='purple'/>
+<polygon points='4 0 5 1.73205 6 0'  stroke='black' fill='purple'/>
+<polygon points='5 1.73205 6 0 7 1.73205'  stroke='black' fill='purple'/>
+<polygon points='6 0 7 1.73205 8 0'  stroke='black' fill='purple'/>
+<polygon points='7 1.73205 8 0 9 1.73205'  stroke='black' fill='purple'/>
+<polygon points='8 0 9 1.73205 10 0'  stroke='black' fill='purple'/>
+<polygon points='9 1.73205 10 0 11 1.73205'  stroke='black' fill='purple'/>
+<polygon points='0 3.4641 1 1.73205 2 3.4641'  stroke='black' fill='purple'/>
+<polygon points='1 1.73205 2 3.4641 3 1.73205'  stroke='black' fill='purple'/>
+<polygon points='2 3.4641 3 1.73205 4 3.4641'  stroke='black' fill='purple'/>
+<polygon points='3 1.73205 4 3.4641 5 1.73205'  stroke='black' fill='purple'/>
+<polygon points='4 3.4641 5 1.73205 6 3.4641'  stroke='black' fill='purple'/>
+<polygon points='5 1.73205 6 3.4641 7 1.73205'  stroke='black' fill='purple'/>
+<polygon points='6 3.4641 7 1.73205 8 3.4641'  stroke='black' fill='purple'/>
+<polygon points='7 1.73205 8 3.4641 9 1.73205'  stroke='black' fill='purple'/>
+<polygon points='8 3.4641 9 1.73205 10 3.4641'  stroke='black' fill='purple'/>
+<polygon points='9 1.73205 10 3.4641 11 1.73205'  stroke='black' fill='purple'/>
+
+</svg>

@@ -1,0 +1,19 @@
+<svg>
+
+<rect width='75' height='175' fill='yellow'/>
+<rect width='31' height='24' x='0' y='0'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='31' y='0'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='0' y='24'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='31' y='24'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='0' y='48'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='31' y='48'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='0' y='72'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='31' y='72'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='0' y='96'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='31' y='96'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='0' y='120'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='31' y='120'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='0' y='144'  stroke='yellow' stroke-width='1' fill='red'/>
+<rect width='31' height='24' x='31' y='144'  stroke='yellow' stroke-width='1' fill='red'/>
+
+</svg>

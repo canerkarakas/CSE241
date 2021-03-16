@@ -1,0 +1,8 @@
+<svg>
+
+<rect width='40' height='34.641' x='0' y='0' fill='transparent'/>
+<polygon points='0 34.641 20 0 40 34.641' fill='purple'/>
+<rect width='10' height='11' x='6.35085' y='23.641'  stroke='blue' fill='yellow'/>
+<rect width='10' height='11' x='16.3509' y='23.641'  stroke='blue' fill='yellow'/>
+<rect width='10' height='11' x='12.7017' y='12.641'  stroke='blue' fill='yellow'/>
+</svg>
